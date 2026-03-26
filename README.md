@@ -117,6 +117,7 @@ Evidenias
 Data Analyst | Business Intelligence | Python & SQL  
 📧 Ricardojgoez@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/ricardosequeda)
+<img width="650" height="490" alt="image" src="https://github.com/user-attachments/assets/58c27b44-a7b6-46b7-978f-6778b94ef3e7" />
 
 ---
 
