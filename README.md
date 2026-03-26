@@ -25,56 +25,21 @@ Una plataforma de transporte urbano necesita entender:
 | matplotlib | Visualizaciones base |
 | seaborn | Gráficas estadísticas avanzadas |
 
----
+Evidenias
+<img width="1799" height="629" alt="01_demanda_temporal" src="https://github.com/user-attachments/assets/960cc6ba-393d-42d2-88b3-6b6a052867b9" />
+<img width="1876" height="629" alt="02_heatmap_demanda" src="https://github.com/user-attachments/assets/d469371b-1d2d-46d2-a617-9a6ac19c5ff6" />
 
-## 📂 Estructura del Proyecto
+<img width="1279" height="605" alt="10_pago_vs_calificacion" src="https://github.com/user-attachments/assets/f1411970-e177-4189-aacb-59839e388369" />
+<img width="1800" height="759" alt="07_revenue_mensual" src="https://github.com/user-attachments/assets/5817e527-40cb-454e-b9ea-89db3f4a51f0" />
+<img width="1799" height="1315" alt="06_distribucion_tarifas" src="https://github.com/user-attachments/assets/b524faa7-5c67-4529-bc14-c12e24695567" />
+<img width="1796" height="759" alt="05_revenue_por_zona" src="https://github.com/user-attachments/assets/c7dd71a1-8db5-4cda-92c8-0b744cc262d8" />
+<img width="1451" height="1149" alt="04_matriz_OD" src="https://github.com/user-attachments/assets/e970b92f-b435-41d6-b0d1-f92aed66be79" />
+<img width="1157" height="1019" alt="13_correlaciones" src="https://github.com/user-attachments/assets/edf7f1fe-6149-4793-b2eb-6df4327990ab" />
+<img width="2059" height="639" alt="12_outliers" src="https://github.com/user-attachments/assets/3c31dedc-fb3e-43fd-b069-6c4da473e314" />
+<img width="1539" height="499" alt="11_tasa_cancelacion" src="https://github.com/user-attachments/assets/ada86b29-9dc4-40e4-bdc2-ac06e89b38b1" />
 
-```
-eda-transporte-urbano/
-│
-├── generar_dataset.py          # Generador del dataset sintético realista
-├── eda_transporte_urbano.py    # Script principal de análisis (10 secciones)
-├── viajes_urbanos_2024.csv     # Dataset generado (15,000 registros)
-│
-└── graficas/
-    ├── 01_demanda_temporal.png
-    ├── 02_heatmap_demanda.png
-    ├── 03_evolucion_semanal.png
-    ├── 04_matriz_OD.png
-    ├── 05_revenue_por_zona.png
-    ├── 06_distribucion_tarifas.png
-    ├── 07_revenue_mensual.png
-    ├── 08_distancia_vs_tarifa.png
-    ├── 09_calificaciones.png
-    ├── 10_pago_vs_calificacion.png
-    ├── 11_tasa_cancelacion.png
-    ├── 12_outliers.png
-    └── 13_correlaciones.png
-```
-
----
-
-## 📊 Dataset
-
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| `viaje_id` | str | Identificador único del viaje |
-| `fecha_inicio` | datetime | Fecha y hora de inicio |
-| `hora` | int | Hora del día (0–23) |
-| `zona_origen` | str | Zona de recogida |
-| `zona_destino` | str | Zona de destino |
-| `tipo_vehiculo` | str | Moto / Carro / Premium / Camión |
-| `distancia_km` | float | Kilómetros recorridos |
-| `duracion_min` | float | Duración en minutos |
-| `tarifa_cop` | float | Tarifa en pesos colombianos |
-| `metodo_pago` | str | Efectivo / Tarjeta / App / Nequi / Daviplata |
-| `calificacion` | float | Calificación del servicio (1–5 ★) |
-| `cancelado` | bool | Si el viaje fue cancelado |
-| `factor_demanda` | float | Multiplicador de precio pico |
-
-**El dataset incluye suciedad intencional** para practicar limpieza: valores nulos en calificación, zona_destino, metodo_pago y tarifa_cop, además de outliers en distancia.
-
----
+<img width="1210" height="759" alt="08_distancia_vs_tarifa" src="https://github.com/user-attachments/assets/b710451f-1ee6-4810-8d71-75921d11cf19" />
+<img width="1799" height="759" alt="09_calificaciones" src="https://github.com/user-attachments/assets/182c9d31-f071-4d18-b3ee-4de702fa7686" />
 
 ## 🔍 Estructura del Análisis
 
@@ -145,28 +110,6 @@ eda-transporte-urbano/
 4. **Concentrar flotilla en zonas Centro y Poblado** durante horas pico dado su alto volumen y revenue
 5. **Investigar outliers de tarifa** (7% de viajes): pueden indicar errores en el sistema de tarifas o viajes de larga distancia sin categoría propia
 
----
-
-## 🚀 Cómo Ejecutar
-
-```bash
-# 1. Clonar el repositorio
-git clone https://github.com/ricardosequeda/eda-transporte-urbano
-cd eda-transporte-urbano
-
-# 2. Instalar dependencias
-pip install pandas numpy matplotlib seaborn
-
-# 3. Generar el dataset
-python generar_dataset.py
-
-# 4. Ejecutar el análisis completo
-python eda_transporte_urbano.py
-
-# Las gráficas se guardan automáticamente en ./graficas/
-```
-
----
 
 ## 👤 Autor
 
